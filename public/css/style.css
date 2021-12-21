@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Reem Kufi;
+  padding: 20px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left p {
+  margin-left: 40px;
+}
+
+/* MAIN */
+
+main {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.title {
+  margin: 20px;
+}
+
+.title span i {
+  color: #e74c3c;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-family: Righteous;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: Righteous;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-family: Reem Kufi;
+}
+
+.message {
+  text-align: center;
+  padding: 20px;
+}
+
+.bottom {
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botton_right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botton_right p {
+  margin-left: 20px;
+}
+
+.card {
+  border: 2px solid black;
+  color: black;
+  font-family: Righteous;
+  padding: 15px;
+  margin: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card span {
+  margin: 5px;
+}
+
+.card:active {
+  transform: translate(5px, 5px);
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.note {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Reem Kufi;
+}
+
+/* SURFACE DUO */
+@media only screen and (max-width: 540px) {
+  body {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  .left,
+  .botton_right {
+    display: none;
+  }
+
+  main {
+    position: relative;
+  }
+}
