@@ -186,4 +186,8 @@ footer {
     border: none;
     border-radius: 50px;
   }
+
+  .bottom p {
+    text-align: center;
+  }
 }

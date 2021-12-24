@@ -50,6 +50,7 @@ app.get("/audiotest", async (req, res) => {
   //     })
   //   );
 
+  //res.send(audioFormats);
   res.send(info);
 });
 
