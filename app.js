@@ -7,6 +7,8 @@ const app = express();
 
 app.use(cors());
 
+app.set("view engine", "hbs");
+
 app.use(express.static(path.join(__dirname, "public")));
 
 let port = process.env.PORT || 3000;
@@ -23,6 +25,14 @@ const convertURL = (url) => {
     return url;
   }
 };
+
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+app.get("/yt2mp3", (req, res) => {
+  res.render("yt2mp3");
+});
 
 // YOUTUBE TO MP3 CONVERTER
 app.get("/audio", async (req, res) => {

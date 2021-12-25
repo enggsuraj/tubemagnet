@@ -38,8 +38,8 @@ btn.addEventListener("click", (e) => {
     yt_link.value = "";
   } else if (matchYoutubeUrl(yt_link.value)) {
     fetchData(yt_link.value);
-    yt_link.value = "";
   } else {
     alert("Enter Valid Link");
+    yt_link.value = "";
   }
 });
