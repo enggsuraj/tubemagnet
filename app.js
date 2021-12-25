@@ -1,13 +1,15 @@
 const express = require("express");
 const ytdl = require("ytdl-core");
 const cors = require("cors");
-var path = require("path");
+let path = require("path");
 
 const app = express();
 
 app.use(cors());
 
 app.use(express.static(path.join(__dirname, "public")));
+
+let port = process.env.PORT || 3000;
 
 const convertURL = (url) => {
   let newURL;
@@ -54,6 +56,6 @@ app.get("/audiotest", async (req, res) => {
   res.send(info);
 });
 
-app.listen(8000, (req, res) => {
-  console.log("Server Listening at 8000");
+app.listen(port, (req, res) => {
+  console.log("Server Listening at 3000");
 });
