@@ -147,4 +147,8 @@ footer {
   main {
     position: relative;
   }
+
+  .bottom p {
+    text-align: center;
+  }
 }

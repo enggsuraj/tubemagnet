@@ -50,22 +50,22 @@ app.get("/audio", async (req, res) => {
   );
 });
 
-app.get("/audiotest", async (req, res) => {
-  let info = await ytdl.getInfo("https://www.youtube.com/watch?v=cRsV7OXIyi0");
-  let audioFormats = ytdl.filterFormats(info.formats, "audioonly");
+// app.get("/audiotest", async (req, res) => {
+//   let info = await ytdl.getInfo("https://www.youtube.com/watch?v=cRsV7OXIyi0");
+//   let audioFormats = ytdl.filterFormats(info.formats, "audioonly");
 
-  //   res.send(
-  //     JSON.stringify({
-  //       audioURL: audioFormats[1].url,
-  //       thumbnail: info.videoDetails.thumbnails,
-  //       title: info.videoDetails.title,
-  //     })
-  //   );
+//     res.send(
+//       JSON.stringify({
+//         audioURL: audioFormats[1].url,
+//         thumbnail: info.videoDetails.thumbnails,
+//         title: info.videoDetails.title,
+//       })
+//     );
 
-  //res.send(audioFormats);
-  res.send(info);
-});
+//   res.send(audioFormats);
+//   res.send(info);
+// });
 
 app.listen(port, (req, res) => {
-  console.log("Server Listening at 3000");
+  console.log("Server Listening...");
 });
