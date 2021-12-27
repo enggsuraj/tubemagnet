@@ -25,7 +25,7 @@ function matchYoutubeUrl(url) {
 
 // FETCH JSON DATA
 function fetchData(url) {
-  fetch(`https://youtube-all-tools.herokuapp.com/audio?youtubeURL=${url}`)
+  fetch(`https://youtubetools.herokuapp.com/audio?youtubeURL=${url}`)
     .then((response) => response.json())
     .then((data) => getAudio(data));
 }
