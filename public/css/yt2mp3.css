@@ -12,6 +12,11 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
