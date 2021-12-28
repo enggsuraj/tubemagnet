@@ -1,12 +1,12 @@
 {
-  "name": "server",
+  "name": "youtubetools-server",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
   },
-  "author": "",
+  "author": "enggsuraj",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
