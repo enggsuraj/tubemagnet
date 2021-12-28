@@ -34,6 +34,18 @@ app.get("/yt2mp3", (req, res) => {
   res.render("yt2mp3");
 });
 
+app.get("/privacy", (req, res) => {
+  res.render("privacy");
+});
+
+app.get("/terms", (req, res) => {
+  res.render("terms");
+});
+
+app.get("/disclaimer", (req, res) => {
+  res.render("disclaimer");
+});
+
 // YOUTUBE TO MP3 CONVERTER
 app.get("/audio", async (req, res) => {
   const videoID = req.query.youtubeURL;
@@ -49,22 +61,6 @@ app.get("/audio", async (req, res) => {
     })
   );
 });
-
-// app.get("/audiotest", async (req, res) => {
-//   let info = await ytdl.getInfo("https://www.youtube.com/watch?v=cRsV7OXIyi0");
-//   let audioFormats = ytdl.filterFormats(info.formats, "audioonly");
-
-//     res.send(
-//       JSON.stringify({
-//         audioURL: audioFormats[1].url,
-//         thumbnail: info.videoDetails.thumbnails,
-//         title: info.videoDetails.title,
-//       })
-//     );
-
-//   res.send(audioFormats);
-//   res.send(info);
-// });
 
 app.listen(port, (req, res) => {
   console.log("Server Listening...");

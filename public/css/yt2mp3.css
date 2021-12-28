@@ -12,7 +12,9 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-a {
+.message a,
+.left a,
+nav a {
   text-decoration: none;
   color: black;
 }
@@ -35,6 +37,9 @@ nav {
 }
 
 /* MAIN */
+main {
+  margin-top: 40px;
+}
 
 .container {
   text-align: center;
@@ -44,7 +49,7 @@ nav {
 }
 
 .container img {
-  width: 50px;
+  width: 30px;
   margin: 20px;
 }
 
