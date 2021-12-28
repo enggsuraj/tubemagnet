@@ -46,9 +46,14 @@ app.get("/disclaimer", (req, res) => {
   res.render("disclaimer");
 });
 
+app.get("/thumbnail", (req, res) => {
+  res.render("thumbnail");
+});
+
 // YOUTUBE TO MP3 CONVERTER
 app.get("/audio", async (req, res) => {
   const videoID = req.query.youtubeURL;
+  console.log(videoID);
   convertURL(videoID);
   let info = await ytdl.getInfo(videoID);
   let audioFormats = ytdl.filterFormats(info.formats, "audioonly");
@@ -60,6 +65,14 @@ app.get("/audio", async (req, res) => {
       title: info.videoDetails.title,
     })
   );
+});
+
+// THUMBNAIL DOWNALOAD
+app.get("/thumbnaildata", async (req, res) => {
+  const videoID = req.query.youtubeURL;
+  convertURL(videoID);
+  let info = await ytdl.getInfo(videoID);
+  res.send(JSON.stringify(info.videoDetails));
 });
 
 app.listen(port, (req, res) => {

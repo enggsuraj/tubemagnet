@@ -32,6 +32,7 @@ function fetchData(url) {
 
 // EVENT HANDLER ON CLICK
 btn.addEventListener("click", (e) => {
+  console.log(yt_link.value);
   e.preventDefault();
   if (yt_link.value.trim().length === 0) {
     alert("Enter Valid Link");
