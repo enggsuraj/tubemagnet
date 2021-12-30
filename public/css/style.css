@@ -42,7 +42,7 @@ nav {
 /* MAIN */
 
 main {
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -137,7 +137,6 @@ footer {
   font-family: Reem Kufi;
 }
 
-/* SURFACE DUO */
 @media only screen and (max-width: 540px) {
   body {
     font-size: 12px;

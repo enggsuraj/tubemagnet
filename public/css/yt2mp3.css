@@ -36,7 +36,6 @@ nav {
   margin-left: 40px;
 }
 
-/* MAIN */
 main {
   margin-top: 40px;
 }
@@ -77,6 +76,10 @@ input {
   width: 500px;
   border: 3px solid black;
   border-radius: 50px;
+}
+
+.title {
+  margin-bottom: 20px;
 }
 
 .button_container {
@@ -154,7 +157,6 @@ footer {
   text-align: center;
 }
 
-/* SURFACE DUO */
 @media only screen and (max-width: 540px) {
   body {
     font-size: 12px;
@@ -177,15 +179,11 @@ footer {
   }
 
   main {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
     padding: 15px;
   }
 
   .container img {
-    margin: 20px;
+    margin: 15px;
     width: 20px;
   }
 

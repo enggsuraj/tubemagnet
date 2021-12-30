@@ -7,8 +7,6 @@ let thumbnail_img = document.querySelector(".thumbnail_img");
 let x = document.querySelector(".x");
 let heading = document.querySelector(".heading");
 
-// let btn_download = document.querySelector(".btn_download");
-
 // GET THUMBNAIL ARRAY
 function getThumbnail(data) {
   x.style.visibility = "visible";

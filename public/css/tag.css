@@ -152,7 +152,7 @@ input {
 
 footer {
   font-family: Reem Kufi;
-  flex: 0 0 50px; /*or just height:50px;*/
+  flex: 0 0 50px;
   margin-top: auto;
 }
 
@@ -195,7 +195,6 @@ footer {
   text-align: center;
 }
 
-/* SURFACE DUO */
 @media only screen and (max-width: 540px) {
   body {
     font-size: 12px;
@@ -215,13 +214,6 @@ footer {
   .left,
   .botton_right {
     display: none;
-  }
-
-  main {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
   }
 
   .container img {
