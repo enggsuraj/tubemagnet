@@ -12,6 +12,12 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .message a,
 .left a,
 nav a {
@@ -132,11 +138,18 @@ input {
   margin: 15px;
 }
 
+.thumbnail_container {
+  margin: 10px 0;
+}
+
 footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
   font-family: Reem Kufi;
+  flex: 0 0 50px;
+  margin-top: auto;
+}
+
+.heading {
+  text-align: center;
 }
 
 .message {
