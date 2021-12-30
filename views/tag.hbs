@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/thumbnail.css">
-    <title>Thumbnail Downloader</title>
+    <link rel="stylesheet" href="./css/tag.css">
+    <title>Youtube Tag Downloader</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -18,43 +20,42 @@
             </div>
         </nav>
     </header>
-        <main>
+    <main>
         <div class="container">
             {{!-- <div class="container_one">
                 <img src="./assets/youtube.png" alt="">
             </div> --}}
             <div class="title">
-                <h1>Youtube Thumbnail Dowloader</h1>
+                <h1>Youtube Tag Dowloader</h1>
             </div>
             {{!-- <div class="container_right">
                 <img src="./assets/sound-waves.png" alt="">
             </div> --}}
         </div>
         <div class="input_container">
-            <input class='input_thumbnail' type="text" placeholder='Enter Youtube link ...'>
+            <input class='input_tag' type="text" placeholder='Enter Youtube link ...'>
         </div>
         <div class="button_container">
-            <button class='btn_thumbnail'>
-                <h3>Find thumbnails</h3>
+            <button class='btn_tag'>
+                <h3>Find Tags</h3>
             </button>
-        </div>  
-
-        <div class="thumbnail_box">
-            <p class="heading"></p>
-            <div class="size">
-                <span class="height"></span>
-                <span class="x">x</span>
-                <span class="width"></span>
-            </div>
-            <img class="thumbnail_img" src="" alt="">
-            {{!-- <div>
-                <button class="btn_download">Download Image</button>
-            </div> --}}
         </div>
+        <div class="details">
+            <p class="title_tag"></p>
+            <img src="" class="img_tag" alt="">
+
+            <div class="tag_box"></div>
+
+
+        </div>
+
+
+
+
     </main>
-        <footer>
+    <footer>
         <div class="message">
-            Made with ☕ and 💻 by <a href="https://blogtheorem.com" target="__blank">blogtheorem</a> 
+            Made with ☕ and 💻 by <a href="https://blogtheorem.com" target="__blank">blogtheorem</a>
         </div>
         <div class="bottom">
             <p>Copyright @youtubetools.com 2021</p>
@@ -66,8 +67,11 @@
             </div>
         </div>
     </footer>
-    <script src="./script/thumbnail.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/amcharts/3.21.15/plugins/export/libs/FileSaver.js/FileSaver.min.js"></script>
-    
+
+    <script src="./script/tag.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/amcharts/3.21.15/plugins/export/libs/FileSaver.js/FileSaver.min.js"></script>
+
 </body>
+
 </html>

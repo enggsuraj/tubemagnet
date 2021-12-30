@@ -50,10 +50,13 @@ app.get("/thumbnail", (req, res) => {
   res.render("thumbnail");
 });
 
+app.get("/tag", (req, res) => {
+  res.render("tag");
+});
+
 // YOUTUBE TO MP3 CONVERTER
 app.get("/audio", async (req, res) => {
   const videoID = req.query.youtubeURL;
-  console.log(videoID);
   convertURL(videoID);
   let info = await ytdl.getInfo(videoID);
   let audioFormats = ytdl.filterFormats(info.formats, "audioonly");
@@ -73,6 +76,21 @@ app.get("/thumbnaildata", async (req, res) => {
   convertURL(videoID);
   let info = await ytdl.getInfo(videoID);
   res.send(JSON.stringify(info.videoDetails));
+});
+
+// TAG DOWNLOAD
+app.get("/tagdata", async (req, res) => {
+  const videoID = req.query.youtubeURL;
+  convertURL(videoID);
+  let info = await ytdl.getInfo(videoID);
+
+  res.send(
+    JSON.stringify({
+      keywords: info.videoDetails.keywords,
+      thumbnails: info.videoDetails.thumbnails,
+      title: info.videoDetails.title,
+    })
+  );
 });
 
 app.listen(port, (req, res) => {

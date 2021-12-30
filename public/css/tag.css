@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.message a,
+.left a,
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Reem Kufi;
+  padding: 20px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left p {
+  margin-left: 40px;
+}
+
+/* MAIN */
+main {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container img {
+  width: 30px;
+  margin: 20px;
+}
+
+h1 {
+  font-family: Righteous;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: Righteous;
+}
+
+h4,
+h3 {
+  font-family: Reem Kufi;
+}
+
+.input_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  padding: 15px;
+  width: 500px;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+
+.details {
+  text-align: center;
+}
+
+.title_tag {
+  margin: 20px 0;
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.btn_tag {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+
+.tag_box {
+  position: relative;
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.btn_tag:hover {
+  cursor: pointer;
+}
+
+.btn_tag:active {
+  transform: translateY(5px);
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.button_container span {
+  margin: 5px;
+}
+
+.x,
+.btn_download {
+  visibility: hidden;
+}
+
+.btn_download {
+  padding: 5px;
+  margin: 20px;
+}
+
+.size,
+.heading {
+  margin: 15px;
+}
+
+footer {
+  font-family: Reem Kufi;
+  flex: 0 0 50px; /*or just height:50px;*/
+  margin-top: auto;
+}
+
+.message {
+  text-align: center;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.bottom {
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botton_right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botton_right p {
+  margin-left: 20px;
+}
+
+.download {
+  visibility: hidden;
+}
+
+.loading {
+  width: 50px;
+}
+
+.audio_box,
+.thumbnail,
+.download {
+  margin: 20px;
+  text-align: center;
+}
+
+/* SURFACE DUO */
+@media only screen and (max-width: 540px) {
+  body {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  .input_container input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  .left,
+  .botton_right {
+    display: none;
+  }
+
+  main {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+  }
+
+  .container img {
+    margin: 20px;
+    width: 20px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50px;
+  }
+
+  .bottom p {
+    text-align: center;
+  }
+
+  .tag_box {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+}

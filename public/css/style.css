@@ -80,7 +80,8 @@ footer {
 
 .message {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  background-color: #eee;
 }
 
 .bottom {

@@ -7,18 +7,16 @@ let thumbnail_img = document.querySelector(".thumbnail_img");
 let x = document.querySelector(".x");
 let heading = document.querySelector(".heading");
 
-let btn_download = document.querySelector(".btn_download");
+// let btn_download = document.querySelector(".btn_download");
 
 // GET THUMBNAIL ARRAY
 function getThumbnail(data) {
   x.style.visibility = "visible";
-  btn_download.style.visibility = "visible";
+  //   btn_download.style.visibility = "visible";
   height.innerText = data.thumbnails[3].height;
   width.innerText = data.thumbnails[3].width;
   thumbnail_img.src = data.thumbnails[3].url;
   heading.innerText = data.title;
-  btn_download.href = data.thumbnails[3].url;
-  btn_download.download = data.title;
 }
 
 // VALIDATE URL
