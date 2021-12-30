@@ -36,7 +36,6 @@ nav {
   margin-left: 40px;
 }
 
-/* MAIN */
 main {
   margin-top: 40px;
 }
@@ -221,5 +220,11 @@ footer {
 
   .bottom p {
     text-align: center;
+  }
+
+  .thumbnail_img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
   }
 }
