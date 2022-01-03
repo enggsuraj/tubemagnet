@@ -11,7 +11,7 @@ app.set("view engine", "hbs");
 
 app.use(express.static(path.join(__dirname, "public")));
 
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 8080;
 
 const convertURL = (url) => {
   let newURL;
@@ -93,6 +93,6 @@ app.get("/tagdata", async (req, res) => {
   );
 });
 
-app.listen(port, (req, res) => {
+app.listen(port, () => {
   console.log("Server Listening...");
 });
