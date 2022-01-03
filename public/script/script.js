@@ -23,7 +23,7 @@ function matchYoutubeUrl(url) {
   return false;
 }
 
-// FETCH JSON DATA
+// FETCH JSON DATA MP3
 function fetchData(url) {
   fetch(`https://youtubetools.herokuapp.com/audio?youtubeURL=${url}`)
     .then((response) => response.json())
