@@ -2,7 +2,7 @@
 let input_thumbnail = document.querySelector(".input_thumbnail");
 let btn_thumbnail = document.querySelector(".btn_thumbnail");
 let height = document.querySelector(".height");
-let width = document.querySelector(".width");
+let width = document.querySelector(".wid th");
 let thumbnail_img = document.querySelector(".thumbnail_img");
 let x = document.querySelector(".x");
 let heading = document.querySelector(".heading");
