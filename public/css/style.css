@@ -12,6 +12,12 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .left a {
   text-decoration: none;
   color: black;
@@ -42,7 +48,7 @@ nav {
 /* MAIN */
 
 main {
-  margin-top: 40px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -71,11 +77,24 @@ h2 {
   font-family: Righteous;
 }
 
+.content {
+  margin: 30px auto 60px auto;
+  width: 50%;
+  text-align: center;
+}
+
+.content_features h3 {
+  margin: 20px 0;
+}
+
+.content p {
+  margin: 10px 0;
+}
+
 footer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
   font-family: Reem Kufi;
+  flex: 0 0 50px;
+  margin-top: auto;
 }
 
 .message {
@@ -160,5 +179,14 @@ footer {
 
   .bottom p {
     text-align: center;
+  }
+
+  .content {
+    margin: 20px auto 40px auto;
+    width: 90%;
+  }
+
+  main {
+    margin-top: 20px;
   }
 }
