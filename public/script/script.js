@@ -1,34 +1,25 @@
-let yt_link = document.querySelector(".input_value");
-let btn = document.querySelector(".btn");
-let download = document.querySelector(".download");
+import { matchYoutubeUrl } from "./utility/utility.js";
+
 let title = document.querySelector(".audio_box-title");
+let yt_link = document.querySelector(".input_value");
 let thumbnail = document.querySelector(".thumbnail");
+let download = document.querySelector(".download");
+let btn = document.querySelector(".btn");
 
 // GET AUDIO BUTTON
-function getAudio(data) {
+const getAudio = (data) => {
   download.style.visibility = "visible";
   download.href = data.audioURL;
   title.innerText = data.title;
   thumbnail.src = data.thumbnail[2].url;
-  length.innerText = data.length;
-}
-
-// VALIDATE URL
-function matchYoutubeUrl(url) {
-  var p =
-    /^(?:https?:\/\/)?(?:m\.|www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
-  if (url.match(p)) {
-    return true;
-  }
-  return false;
-}
+};
 
 // FETCH JSON DATA MP3
-function fetchData(url) {
+const fetchData = (url) => {
   fetch(`https://youtubetools.herokuapp.com/audio?youtubeURL=${url}`)
     .then((response) => response.json())
     .then((data) => getAudio(data));
-}
+};
 
 // EVENT HANDLER ON CLICK
 btn.addEventListener("click", (e) => {
@@ -38,6 +29,7 @@ btn.addEventListener("click", (e) => {
     yt_link.value = "";
   } else if (matchYoutubeUrl(yt_link.value)) {
     fetchData(yt_link.value);
+    yt_link.value = "";
   } else {
     alert("Enter Valid Link");
     yt_link.value = "";

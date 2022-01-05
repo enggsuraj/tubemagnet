@@ -5,7 +5,7 @@ let title_tag = document.querySelector(".title_tag");
 let img_tag = document.querySelector(".img_tag");
 
 // GET THUMBNAIL ARRAY
-function getTag(data) {
+const getTag = (data) => {
   img_tag.src = data.thumbnails[3].url;
   title_tag.innerText = data.title;
   console.log(data);
@@ -18,24 +18,24 @@ function getTag(data) {
       tag_box.append(p);
     });
   }
-}
+};
 
 // VALIDATE URL
-function matchYoutubeUrl(url) {
-  var p =
+const matchYoutubeUrl = (url) => {
+  let p =
     /^(?:https?:\/\/)?(?:m\.|www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
   if (url.match(p)) {
     return true;
   }
   return false;
-}
+};
 
 // FETCH JSON DATA
-function fetchTagData(url) {
+const fetchTagData = (url) => {
   fetch(`https://youtubetools.herokuapp.com/tagdata?youtubeURL=${url}`)
     .then((response) => response.json())
     .then((data) => getTag(data));
-}
+};
 
 // EVENT HANDLER ON CLICK
 btn_tag.addEventListener("click", (e) => {
