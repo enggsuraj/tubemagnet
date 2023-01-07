@@ -16,6 +16,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #1a1a1a;
+  color: rgb(182, 182, 182);
 }
 
 .left a {
@@ -97,17 +99,11 @@ footer {
   margin-top: auto;
 }
 
-.message {
-  text-align: center;
-  padding: 10px;
-  background-color: #eee;
-}
-
 .bottom {
   width: 100%;
-  background-color: black;
+  background-color: #111111;
   padding: 20px;
-  color: white;
+  color: #eee;
   display: flex;
   justify-content: space-between;
 }
@@ -122,16 +118,16 @@ footer {
 }
 
 .card {
-  border: 2px solid black;
-  color: black;
+  border: 2px solid #eee;
   font-family: Righteous;
   padding: 15px;
   margin: 10px;
+  color: #eee;
 }
 
 .card a {
   text-decoration: none;
-  color: black;
+  color: #ededed;
 }
 
 .card span {
@@ -146,7 +142,7 @@ footer {
 
 .card:hover {
   transform: translate(2px, 2px);
-  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 0px 0px white;
   cursor: pointer;
 }
 
@@ -154,6 +150,11 @@ footer {
   margin-top: 20px;
   text-align: center;
   font-family: Reem Kufi;
+}
+
+.coffee {
+  color: #0078d7;
+  text-decoration: none !important;
 }
 
 @media only screen and (max-width: 540px) {
@@ -175,6 +176,7 @@ footer {
 
   main {
     position: relative;
+    margin-top: 20px;
   }
 
   .bottom p {
@@ -186,7 +188,7 @@ footer {
     width: 90%;
   }
 
-  main {
-    margin-top: 20px;
+  .message {
+    margin: 10px auto;
   }
 }

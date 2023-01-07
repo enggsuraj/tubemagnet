@@ -10,6 +10,8 @@
 body,
 html {
   font-family: "Roboto", sans-serif;
+  background-color: #1a1a1a;
+  color: rgb(182, 182, 182);
 }
 
 body {
@@ -22,7 +24,7 @@ body {
 .left a,
 nav a {
   text-decoration: none;
-  color: black;
+  color: rgb(182, 182, 182);
 }
 
 nav {
@@ -50,6 +52,7 @@ main {
 
 .title {
   margin-bottom: 20px;
+  color: white;
 }
 
 .container {
@@ -85,10 +88,16 @@ h3 {
 }
 
 input {
-  padding: 15px;
+  padding: 20px;
   width: 500px;
   border: 3px solid black;
-  border-radius: 50px;
+  border: none;
+  background-color: #2e2e2e;
+  font-family: "Roboto", sans-serif;
+}
+
+input:focus {
+  outline: none;
 }
 
 .details {
@@ -111,7 +120,6 @@ input {
   background-color: #e74c3c;
   color: white;
   border: none;
-  border-radius: 50px;
 }
 
 .tag_box {
@@ -126,8 +134,8 @@ input {
 }
 
 .btn_tag:active {
-  transform: translateY(5px);
-  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  transform: translate(2px, 2px);
+  box-shadow: 5px 5px 0px 0px #000;
   cursor: pointer;
 }
 
@@ -159,7 +167,6 @@ footer {
 .message {
   text-align: center;
   padding: 10px;
-  background-color: #eee;
 }
 
 .bottom {

@@ -16,7 +16,7 @@ const getAudio = (data) => {
 
 // FETCH JSON DATA MP3
 const fetchData = (url) => {
-  fetch(`https://youtubetools.herokuapp.com/audio?youtubeURL=${url}`)
+  fetch(`http://localhost:3000/audio?youtubeURL=${url}`)
     .then((response) => response.json())
     .then((data) => getAudio(data));
 };
