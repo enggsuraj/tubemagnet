@@ -32,7 +32,7 @@ const matchYoutubeUrl = (url) => {
 
 // FETCH JSON DATA
 const fetchTagData = (url) => {
-  fetch(`http://localhost:3000/tagdata?youtubeURL=${url}`)
+  fetch(`https://youtubetools.herokuapp.com/tagdata?youtubeURL=${url}`)
     .then((response) => response.json())
     .then((data) => getTag(data));
 };

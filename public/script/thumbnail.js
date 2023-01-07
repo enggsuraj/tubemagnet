@@ -31,7 +31,7 @@ const matchYoutubeUrl = (url) => {
 
 // FETCH JSON DATA
 const fetchThumbnailData = (url) => {
-  fetch(`http:localhost:3000/thumbnaildata?youtubeURL=${url}`)
+  fetch(`https://youtubetools.herokuapp.com/thumbnaildata?youtubeURL=${url}`)
     .then((response) => response.json())
     .then((data) => getThumbnail(data));
 };
