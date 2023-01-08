@@ -113,6 +113,12 @@ input:focus {
   border: none;
 }
 
+.btn_thumbnail:disabled,
+.btn_thumbnail[disabled] {
+  background-color: #cccccc;
+  color: #666666;
+}
+
 .btn_thumbnail:hover {
   cursor: pointer;
 }
@@ -209,7 +215,6 @@ footer {
   }
   .input_container input {
     width: 100%;
-    padding: 10px;
   }
 
   .bottom {

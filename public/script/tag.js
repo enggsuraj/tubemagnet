@@ -18,6 +18,8 @@ const getTag = (data) => {
       tag_box.append(p);
     });
   }
+  btn_tag.disabled = false;
+  btn_tag.innerHTML = `<h3>Find Tags</h3>`;
 };
 
 // VALIDATE URL
@@ -45,6 +47,8 @@ btn_tag.addEventListener("click", (e) => {
     alert("Enter Valid Link");
     input_tag.value = "";
   } else if (matchYoutubeUrl(input_tag.value)) {
+    btn_tag.disabled = true;
+    btn_tag.innerHTML = `<h4>Wait Loading  Data...</h4>`;
     fetchTagData(input_tag.value);
     input_tag.value = "";
   } else {

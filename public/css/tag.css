@@ -123,6 +123,12 @@ input:focus {
   border: none;
 }
 
+.btn_tag:disabled,
+.btn_tag[disabled] {
+  background-color: #cccccc;
+  color: #666666;
+}
+
 .tag_box {
   position: relative;
   width: 50%;
@@ -212,7 +218,6 @@ footer {
   }
   .input_container input {
     width: 100%;
-    padding: 10px;
   }
 
   .bottom {

@@ -12,6 +12,8 @@ const getAudio = (data) => {
   download.href = data.audioURL;
   title.innerText = data.title;
   thumbnail.src = data.thumbnail[2].url;
+  btn.disabled = false;
+  btn.innerHTML = `<h4>Convert to .mp3 <span><i class="fas fa-music"></i></span></h4>`;
 };
 
 // FETCH JSON DATA MP3
@@ -28,6 +30,8 @@ btn.addEventListener("click", (e) => {
     alert("Enter Valid Link");
     yt_link.value = "";
   } else if (matchYoutubeUrl(yt_link.value)) {
+    btn.disabled = true;
+    btn.innerHTML = `<h4>Wait Loading  Data...</h4>`;
     fetchData(yt_link.value);
     yt_link.value = "";
   } else {

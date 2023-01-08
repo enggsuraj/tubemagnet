@@ -17,6 +17,8 @@ const getThumbnail = (data) => {
     thumbnail_container.append(thumbnail_img);
     thumbnail_box.append(thumbnail_container);
   });
+  btn_thumbnail.disabled = false;
+  btn_thumbnail.innerHTML = `<h4>Find thumbnail</h4>`;
 };
 
 // VALIDATE URL
@@ -45,6 +47,8 @@ btn_thumbnail.addEventListener("click", (e) => {
     alert("Enter Valid Link");
     input_thumbnail.value = "";
   } else if (matchYoutubeUrl(input_thumbnail.value)) {
+    btn_thumbnail.disabled = true;
+    btn_thumbnail.innerHTML = `<h4>Wait Loading  Data...</h4>`;
     fetchThumbnailData(input_thumbnail.value);
     input_thumbnail.value = "";
   } else {
