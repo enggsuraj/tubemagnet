@@ -32,7 +32,7 @@ const matchYoutubeUrl = (url) => {
 
 // FETCH JSON DATA
 const fetchTagData = (url) => {
-  fetch(`https://www.youtube.toolcarton.com//tagdata?youtubeURL=${url}`)
+  fetch(`https://youtube-tools-1btk.onrender.com/tagdata?youtubeURL=${url}`)
     .then((response) => response.json())
     .then((data) => getTag(data));
 };

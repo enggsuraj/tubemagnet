@@ -31,7 +31,9 @@ const matchYoutubeUrl = (url) => {
 
 // FETCH JSON DATA FROM RENDER
 const fetchThumbnailData = (url) => {
-  fetch(`https://www.youtube.toolcarton.com/thumbnaildata?youtubeURL=${url}`)
+  fetch(
+    `https://youtube-tools-1btk.onrender.com/thumbnaildata?youtubeURL=${url}`
+  )
     .then((response) => response.json())
     .then((data) => getThumbnail(data));
 };
