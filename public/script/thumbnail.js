@@ -29,7 +29,7 @@ const matchYoutubeUrl = (url) => {
   return false;
 };
 
-// FETCH JSON DATA
+// FETCH JSON DATA FROM RENDER
 const fetchThumbnailData = (url) => {
   fetch(`https://www.youtube.toolcarton.com/thumbnaildata?youtubeURL=${url}`)
     .then((response) => response.json())
