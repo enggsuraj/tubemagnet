@@ -127,6 +127,7 @@ input:focus {
 .btn_tag[disabled] {
   background-color: #cccccc;
   color: #666666;
+  transform: translate(0px, 0px);
 }
 
 .tag_box {

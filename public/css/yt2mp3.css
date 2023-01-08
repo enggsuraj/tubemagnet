@@ -120,6 +120,7 @@ input:focus {
 .btn[disabled] {
   background-color: #cccccc;
   color: #666666;
+  transform: translate(0px, 0px);
 }
 
 .button_container span {

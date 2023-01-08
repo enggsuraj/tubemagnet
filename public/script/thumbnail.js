@@ -9,12 +9,18 @@ let thumbnail_box = document.querySelector(".thumbnail_box");
 const getThumbnail = (data) => {
   heading.innerText = data.title;
   data.thumbnails.forEach((element) => {
+    console.log(element);
+
     let thumbnail_container = document.createElement("div");
     thumbnail_container.classList.add("thumbnail_container");
     let thumbnail_img = document.createElement("img");
     thumbnail_img.classList.add("thumbnail_img");
     thumbnail_img.src = element.url;
+    let size = document.createElement("div");
+    size.classList.add("thumbnail_size");
+    size.innerText = `${element.width}x${element.height}`;
     thumbnail_container.append(thumbnail_img);
+    thumbnail_container.append(size);
     thumbnail_box.append(thumbnail_container);
   });
   btn_thumbnail.disabled = false;
@@ -43,6 +49,7 @@ const fetchThumbnailData = (url) => {
 // EVENT HANDLER ON CLICK
 btn_thumbnail.addEventListener("click", (e) => {
   e.preventDefault();
+  thumbnail_box.innerHTML = "";
   if (input_thumbnail.value.trim().length === 0) {
     alert("Enter Valid Link");
     input_thumbnail.value = "";
