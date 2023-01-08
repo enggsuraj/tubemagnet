@@ -18,9 +18,18 @@ const getThumbnail = (data) => {
     thumbnail_img.src = element.url;
     let size = document.createElement("div");
     size.classList.add("thumbnail_size");
-    size.innerText = `${element.width}x${element.height}`;
+    size.innerText = `${element.width} x ${element.height}`;
+    let download_container = document.createElement("div");
+
+    let download = document.createElement("a");
+    download_container.classList.add("thumbnail_download");
+    download.setAttribute("download", "");
+    download.href = element.url;
+    download.innerText = "Save Image";
+    download_container.append(download);
     thumbnail_container.append(thumbnail_img);
     thumbnail_container.append(size);
+    thumbnail_container.append(download_container);
     thumbnail_box.append(thumbnail_container);
   });
   btn_thumbnail.disabled = false;

@@ -206,6 +206,15 @@ footer {
   text-align: center;
 }
 
+.thumbnail_size {
+  margin-top: 10px;
+}
+
+.thumbnail_download {
+  padding-top: 5px !important;
+  padding-bottom: 20px !important;
+}
+
 /* SURFACE DUO */
 @media only screen and (max-width: 540px) {
   body {

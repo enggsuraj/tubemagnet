@@ -6,7 +6,7 @@ let img_tag = document.querySelector(".img_tag");
 
 // GET THUMBNAIL ARRAY
 const getTag = (data) => {
-  img_tag.src = data.thumbnails[3].url;
+  img_tag.src = data.thumbnails[2].url;
   title_tag.innerText = data.title;
   console.log(data);
   if (!data.keywords) {
