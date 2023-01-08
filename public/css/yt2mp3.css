@@ -127,6 +127,11 @@ input:focus {
   margin: 5px;
 }
 
+.bottom a {
+  text-decoration: none;
+  color: white;
+}
+
 footer {
   position: absolute;
   width: 100%;

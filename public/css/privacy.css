@@ -4,4 +4,6 @@ body,
 html {
   font-family: Righteous;
   margin: 10px;
+  background-color: #1a1a1a;
+  color: rgb(182, 182, 182);
 }

@@ -215,6 +215,11 @@ footer {
   padding-bottom: 20px !important;
 }
 
+.bottom a {
+  text-decoration: none;
+  color: white;
+}
+
 /* SURFACE DUO */
 @media only screen and (max-width: 540px) {
   body {
