@@ -92,6 +92,7 @@ input {
   border: none;
   background-color: #2e2e2e;
   font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 input:focus {
